@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    background-image: url("../assets/fondoLapicesColores.jpeg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.logoChgByDs{
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+.logoPortada {
+    width: 100%;
+    height: 300px;
+}
+
+.contenedorInicio {
+    background-color: rgba(175, 175, 175, 0.219);
+}
+
+.contenedorHeader {
+    background-color: rgba(0, 0, 0, 0.733);
+    width: 100%;
+    position: fixed;
+}
+
+.contenedorHeader ul {
+    list-style-type: none;
+    text-align: right;
+    padding: 0 0 20px 0;
+    
+}
+
+.contenedorHeader ul div {
+    text-align: left;
+}
+
+.contenedorHeader ul li {
+    display: inline;
+    padding: 10px 10px 10px 0;
+}
+
+.contenedorHeader ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.contenedorFooter {
+    background-color: rgba(0, 0, 0, 0.733);
+}
+
+.contenedorFooter ul {
+    list-style-type: none;
+}
+
+.contenedorFooter ul li {
+    display: inline;
+    color: white;
+}
+
+.contenedorFooter ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.logoContactoFooter a img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.irArriba{
+    text-align: right;
+}
+
+.contenedorFooter p {
+    color: white;
+    text-align: center;
+}
+
+main h1 {
+    background-color: aliceblue;
+    color: rgba(245, 159, 0, 0.795);
+    text-align: center;
+    padding: 25px 25px 25px 25px;
+}
+
+.imgIntroduccion{
+    width: 50%;
+}
+
+.logoWorkUs img{
+    width: 6.25rem;
+    height: 5rem;
+}
+
+.workUs img {
+    width: 12.5rem;
+    height: 9.375rem;
+}
+
+.textoIntroduccion {
+    width: 50%;
+}
+
+.quienesSomos{
+    width: 50%;
+    right: 100px;
+}
+
+.quienesSomos img {
+    width: 70%;
+}
+
+.imgIntroduccion img {    
+    width: 80%;
+    padding: 20px 20px 20px 20px;
+}
+
+.formularioContacto ul {
+    list-style: none;
+}
+
+.contenedorContactos {
+    background-color: #ffa43ca8;
+}
+
+.forms {
+    background-color: rgba(156, 156, 156, 0.329);
+}
+
+.contenedorContactos div img {
+    width: 3.75rem;
+    height: 3.75rem;
+}
+
+.imagenConsultas img {
+    width: 19rem;
+    height: 23rem;
+}
