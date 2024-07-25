@@ -16,7 +16,7 @@ body {
 
 .logoChgByDs{
     width: 3.125rem;
-    height: 3.125rem;
+    height: 3.125rem; 
 }
 
 .logoPortada {
@@ -25,7 +25,7 @@ body {
 }
 
 .contenedorInicio {
-    background-color: rgba(175, 175, 175, 0.219);
+    background-color: rgba(226, 226, 226, 0.336);
 }
 
 .contenedorHeader {
