@@ -4,19 +4,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
     font-family: "Manrope", sans-serif;
-    background-image: url("../assets/fondoLapicesColores.jpeg");
+    background-image: url(../assets/images/fondoLapicesColores.jpg);
     background-size: cover;
     background-position: center;
-
+    
+    
 }
 
 .logoChgByDs {
-    width: 3.125rem;
-    height: 3.125rem;
+    width: 3rem;
+    height: 3rem;
+    margin: 10px;
 }
 
 .logoPortada {
@@ -28,11 +31,10 @@ body {
 .contenedorHeader {
     background-color: rgba(0, 0, 0, 0.733);
     width: 100%;
-
     position: fixed;
-    display: flex;
-    flex-wrap: wrap;
+    z-index: 5;
 }
+
 
 .contenedorHeader ul {
     width: 100%;
@@ -43,23 +45,98 @@ body {
 
 .contenedorHeader ul a {
     width: 100%;
-    display: flex;
-}
-
-
-
-.contenedorInicio {
-    background-color: rgba(226, 226, 226, 0.336);
+    
 }
 
 .contenedorHeader ul li {
-    display: inline;
-    padding: 10px 10px 10px 0;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid white;
+    list-style-type: none;
+    
 }
 
 .contenedorHeader ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+main h1{
+    background-color:rgba(255, 176, 30, 0.247);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 30pt;
+}
+
+.mainGridContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+}
+.mainGridItem1 img{
+    width: 34rem;
+    filter: drop-shadow(2px 2px 5px);
+    
+}
+
+.mainGridItem2{
+    font-size: 14pt;
+    width: 80%;
+}
+
+.mainGridItem3{
+    font-size: 14pt;
+    width: 80%;
+}
+
+.mainGridItem3 h3{
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.mainGridItem4 img{
+    width: 30rem;
+    filter: drop-shadow(2px 2px 5px);
+    margin: 10px;
+}
+
+.mainNuestrosServicios{
+    padding: 50px;
+    
+}
+
+.mainNuestrosServicios h2{
+    font-size: 26pt;
+    text-align: center;
+    margin:40px
+}
+
+.mainNuestrosServicios ul{
+    display: grid;
+    width: 70%;
+    margin: auto;
+    grid-template-rows: repeat(4, 1fr);
+    height: 25rem;
+    align-items: center;
+    gap: 20px;
+}
+
+.mainNuestrosServicios ul li{
+    font-size: 16pt;
+}
+
+.mainNSSpan{
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .contenedorFooter {
@@ -92,65 +169,4 @@ body {
 .contenedorFooter p {
     color: white;
     text-align: center;
-}
-
-main h1 {
-    background-color: aliceblue;
-    color: rgba(245, 159, 0, 0.795);
-    text-align: center;
-    padding: 25px 25px 25px 25px;
-}
-
-.imgIntroduccion {
-    width: 50%;
-}
-
-.logoWorkUs img {
-    width: 6.25rem;
-    height: 5rem;
-}
-
-.workUs img {
-    width: 12.5rem;
-    height: 9.375rem;
-}
-
-.textoIntroduccion {
-    width: 50%;
-}
-
-.quienesSomos {
-    width: 50%;
-    right: 100px;
-}
-
-.quienesSomos img {
-    width: 70%;
-}
-
-.imgIntroduccion img {
-    width: 80%;
-    padding: 20px 20px 20px 20px;
-}
-
-.formularioContacto ul {
-    list-style: none;
-}
-
-.contenedorContactos {
-    background-color: #ffa43ca8;
-}
-
-.forms {
-    background-color: rgba(156, 156, 156, 0.329);
-}
-
-.contenedorContactos div img {
-    width: 3.75rem;
-    height: 3.75rem;
-}
-
-.imagenConsultas img {
-    width: 19rem;
-    height: 23rem;
 }
