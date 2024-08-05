@@ -37,12 +37,6 @@ a {
 
 }
 
-@media (max-width:768px) {
-    .logoPortada {
-        width: 960px
-    }
-}
-
 .contenedorHeader {
     background-color: rgba(0, 0, 0, 0.733);
     width: 100%;
@@ -76,6 +70,11 @@ a {
     font-weight: bold;
 }
 
+@media (max-width:768px) {
+    .logoPortada {
+        width: 960px
+    }
+}
 
 /* -------------------------- Index -------------------------- */
 
@@ -96,12 +95,12 @@ main h1 {
     text-align: center;
     width: 75%;
     margin: auto;
+    padding-top: 20px;
 }
 
 .mainGridItem1 img {
-    width: 34rem;
+    width: 32rem;
     filter: drop-shadow(2px 2px 5px);
-
 }
 
 .mainGridItem2 {
@@ -120,14 +119,13 @@ main h1 {
 }
 
 .mainGridItem4 img {
-    width: 30rem;
+    width: 90%;
     filter: drop-shadow(2px 2px 5px);
     margin: 10px;
 }
 
 .mainNuestrosServicios {
     padding: 50px;
-
 }
 
 .mainNuestrosServicios h2 {
@@ -162,7 +160,8 @@ main h1 {
     justify-content: center;
     align-items: center;
     margin: auto;
-    padding-bottom: 100px;
+    margin-top: 30px;
+    margin-bottom: 50px;
     width: 90%;
     height: 100vh;
 }
@@ -225,6 +224,38 @@ main h1 {
 .gridUneteImg {
     width: 55%;
     filter: drop-shadow(2px 2px 5px);
+}
+
+@media (max-width:1024px){
+
+    .mainGridItem1 img{
+        width: 90%;
+    }
+
+    .mainGridItem2 p{
+        width: 100%;
+        font-size: 12pt;
+    }
+
+    .mainGridItem3 h3{
+        font-size: 18pt;
+    }
+
+    .mainGridItem3 p{
+        font-size: 12pt;
+    }
+
+    .mainGridItem4 img{
+        width: 90%;
+    }
+
+    .gridUneteImg {
+        width: 60%;
+    }
+}
+
+@media (max-width:425px){
+    
 }
 
 /* -------------------------- Contactos -------------------------- */
