@@ -12,9 +12,13 @@ body {
     background-image: url(../assets/images/fondoLapicesColores.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    /*quitar por las dudas*/
+    flex-direction: column;
+    /*quitar por las dudas*/
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -31,6 +35,12 @@ a{
     width: 100%;
     height: 15.625rem;
 
+}
+
+@media (max-width:768px) {
+    .logoPortada {
+        width: 960px
+    }
 }
 
 .contenedorHeader {
@@ -50,7 +60,7 @@ a{
 
 .contenedorHeader ul a {
     width: 100%;
-    
+
 }
 
 .contenedorHeader ul li {
@@ -58,7 +68,7 @@ a{
     margin: 10px;
     border: 1px solid white;
     list-style-type: none;
-    
+
 }
 
 .contenedorHeader ul li a {
@@ -67,17 +77,17 @@ a{
 }
 
 
-/* --------------------------------- Main --------------------------------- */
+/* -------------------------- Index -------------------------- */
 
-main h1{
-    background-color:rgba(255, 176, 30, 0.247);
+main h1 {
+    background-color: rgba(255, 176, 30, 0.247);
     text-align: center;
     padding: 20px;
     margin-bottom: 10px;
     font-size: 30pt;
 }
 
-.mainGridContainer{
+.mainGridContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -87,45 +97,46 @@ main h1{
     width: 75%;
     margin: auto;
 }
-.mainGridItem1 img{
+
+.mainGridItem1 img {
     width: 34rem;
     filter: drop-shadow(2px 2px 5px);
-    
+
 }
 
-.mainGridItem2{
+.mainGridItem2 {
     font-size: 14pt;
     width: 80%;
 }
 
-.mainGridItem3{
+.mainGridItem3 {
     font-size: 14pt;
     width: 80%;
 }
 
-.mainGridItem3 h3{
+.mainGridItem3 h3 {
     font-size: 20pt;
     font-weight: bold;
 }
 
-.mainGridItem4 img{
+.mainGridItem4 img {
     width: 30rem;
     filter: drop-shadow(2px 2px 5px);
     margin: 10px;
 }
 
-.mainNuestrosServicios{
+.mainNuestrosServicios {
     padding: 50px;
-    
+
 }
 
-.mainNuestrosServicios h2{
+.mainNuestrosServicios h2 {
     font-size: 26pt;
     text-align: center;
-    margin:40px
+    margin: 40px
 }
 
-.mainNuestrosServicios ul{
+.mainNuestrosServicios ul {
     display: grid;
     width: 70%;
     margin: auto;
@@ -135,19 +146,19 @@ main h1{
     gap: 10px;
 }
 
-.mainNuestrosServicios ul li{
+.mainNuestrosServicios ul li {
     font-size: 16pt;
 }
 
-.mainNSSpan{
+.mainNSSpan {
     font-weight: bold;
     text-decoration: underline;
 }
 
-.mainGridContainerUnete{
+.mainGridContainerUnete {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -156,39 +167,39 @@ main h1{
     height: 100vh;
 }
 
-.mainGridItem1Unete{
+.mainGridItem1Unete {
     display: flex;
-    grid-column:1/3;
+    grid-column: 1/3;
     grid-row: 1/3;
     justify-content: center;
-    
+
 }
 
-.mainGridItem2Unete{
+.mainGridItem2Unete {
     display: flex;
-    grid-column:2/4;
+    grid-column: 2/4;
     grid-row: 2/4;
     justify-content: center;
 }
 
 
-.mainGridItem3Unete{
+.mainGridItem3Unete {
     display: flex;
-    grid-column:3/5;
+    grid-column: 3/5;
     grid-row: 3/5;
     justify-content: center;
 }
 
 
-.mainGridItem4Unete{
+.mainGridItem4Unete {
     display: flex;
-    grid-column:4/6;
+    grid-column: 4/6;
     grid-row: 4/6;
     justify-content: center;
 }
 
 
-.mainGridItem5Unete{
+.mainGridItem5Unete {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -211,9 +222,174 @@ main h1{
     color: black;
 }
 
-.gridUneteImg{
+.gridUneteImg {
     width: 55%;
     filter: drop-shadow(2px 2px 5px);
+}
+
+/* -------------------------- Contactos -------------------------- */
+
+/* Medios de comunicacion y redes sociales */
+.mainContactosFlex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    column-gap: 10px;
+    row-gap: 20px;
+    padding: 10px;
+}
+
+@media (max-width:1024px) {
+    .mainContactosFlex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        width: 45rem;
+        margin: auto;
+    }
+
+    .imagenConsultas img{
+        width: 80%;
+    }
+}
+
+@media (max-width:768px) {
+    main {
+        width: 960px;
+    }
+
+    .mainContactosFlex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        width: 45rem;
+        margin: auto;
+    }
+}
+
+
+.mainContactosFlexItem {
+    width: 20rem;
+    background-color: rgba(255, 166, 0, 0.384);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0px 0px 4px 2px rgba(126, 76, 0, 59%);
+    border-radius: 12px;
+}
+
+.filterLogo {
+    filter: drop-shadow(2px 2px 4px);
+}
+
+.mainContactosFlexItem div img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.posicionTextoContactos {
+    font-size: 12pt;
+    text-align: center;
+}
+
+.posicionTextoContactos h3 {
+    font-size: 20pt;
+    text-align: center;
+}
+
+
+/* Formulario */
+
+.sectionContactosForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 20px;
+    margin: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.divForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.divForm h2 {
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+.divForm div {
+    padding: 20px 15px;
+    border-radius: 3px;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0px 0px 4px 2px rgba(126, 76, 0, 59%);
+}
+
+.contactosForms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+    align-items: center;
+}
+
+.contactosForms ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btnEnviar {
+    width: 60%;
+    height: 30px;
+    background-color: rgba(255, 212, 60, 1);
+    border: none;
+    box-shadow: 0px 0px 3px;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.btnEnviar:hover {
+    background-color: rgb(240, 188, 0);
+    color: white;
+
+}
+
+.btnEnviar:active {
+    background-color: rgb(245, 192, 1);
+}
+
+
+.liFormItem input {
+    width: 18rem;
+    height: 3rem;
+    padding-left: 10px;
+    font-size: 12pt;
+}
+
+.mensajeArea input {
+    width: 18rem;
+    height: 8rem;
+    padding-left: 10px;
+    font-size: 12pt;
+
+}
+
+.imagenConsultas {
+    display: flex;
+    width: 90%;
+    height: 70%;
+    justify-content: center;
 }
 
 /* --------------------------------- Footer --------------------------------- */
@@ -225,7 +401,13 @@ main h1{
     align-items: center;
 }
 
-.contenedorFooter ul  {
+@media (max-width:768px) {
+    .contenedorFooter {
+        width: 960px;
+    }
+}
+
+.contenedorFooter ul {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -233,28 +415,28 @@ main h1{
 
 }
 
-.contenedorFooter li{
+.contenedorFooter li {
     list-style-type: none;
 }
 
 .contenedorFooter ul li a {
     color: white;
-    text-decoration: none;   
+    text-decoration: none;
 }
 
-.contenedorFooter ul li a img{
+.contenedorFooter ul li a img {
     width: 3.5rem;
     padding-top: 5px;
 }
 
-.footerContactos{
+.footerContactos {
     font-size: 16pt;
 }
 
-.contenedorFooter p{
+.contenedorFooter p {
     font-size: 12pt;
     font-weight: bold;
-    text-align:center;
+    text-align: center;
     padding-right: 6.25rem;
     width: 22rem;
 }
@@ -265,10 +447,10 @@ main h1{
     align-items: center;
     color: white;
     gap: 10px;
-    
+
 }
 
-.irArriba h4{
+.irArriba h4 {
     font-size: 16pt;
     font-weight: bold;
 }
@@ -283,7 +465,14 @@ main h1{
     color: white;
 }
 
-.flexFooterContactos{
+.flexFooterContactos {
     display: flex;
-    
+
 }
+
+/* -- Media Querys --
+
+@media (max-width:1024px){}
+@media (max-width:768px){}
+@media (max-width:720px){}
+*/

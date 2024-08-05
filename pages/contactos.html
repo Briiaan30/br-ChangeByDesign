@@ -12,7 +12,8 @@
     <header>
         <nav class="contenedorHeader">
             <ul>
-                <a href="../index.html"><img class="logoChgByDs" src="../assets/images/logoChgByDs.png" alt="Inicio"></a>
+                <a href="../index.html"><img class="logoChgByDs" src="../assets/images/logoChgByDs.png"
+                        alt="Inicio"></a>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="#">Contacto</a></li>
                 <li><a href="./diseños.html">Diseños</a></li>
@@ -25,58 +26,62 @@
     </header>
     <main>
         <h1>Contactos Útiles</h1>
-        <article class="contenedorContactos">
-            <div>
-                <img src="../assets/images/logoWhatsapp.png" alt="whatsapp">
-            </div>
-            <div>
-                <h3>Whatsapp</h3>
-                <p>3516-155123123</p>
-            </div>
-        </article>
-        <article class="contenedorContactos">
-            <div>
-                <img src="../assets/images/logoInstagram.png" alt="instagram">
-            </div>
-            <div>
-                <h3>Instagram</h3>
-                <p>Chg.By.Design_CBA</p>
-            </div>
-        </article>
-        <article class="contenedorContactos">
-            <div>
-                <img src="../assets/images/logoFacebook.png" alt="fabeook">
-            </div>
-            <div>
-                <h3>Facebook</h3>
-                <p>ChangeByDesignCBA</p>
-            </div>
-        </article>
-        <article class="contenedorContactos">
-            <div>
-                <img src="../assets/images/logoGmail.png" alt="gmail">
-            </div>
-            <div>
-                <h3>Gmail</h3>
-                <p>chgBydesign@gmail.com</p>
-            </div>
-        </article>
+        <div class="mainContactosFlex">
+            <article class="mainContactosFlexItem">
+                <div>
+                    <img class="filterLogo" src="../assets/images/logoWhatsapp.png" alt="whatsapp">
+                </div>
+                <div class="posicionTextoContactos">
+                    <h3>Whatsapp</h3>
+                    <p>3516-155123123</p>
+                </div>
+            </article>
+            <article class="mainContactosFlexItem">
+                <div>
+                    <img class="filterLogo" src="../assets/images/logoInstagram.png" alt="instagram">
+                </div>
+                <div class="posicionTextoContactos">
+                    <h3>Instagram</h3>
+                    <p>Chg.By.Design_CBA</p>
+                </div>
+            </article>
+            <article class="mainContactosFlexItem">
+                <div>
+                    <img class="filterLogo" src="../assets/images/logoFacebook.png" alt="fabeook">
+                </div>
+                <div class="posicionTextoContactos">
+                    <h3>Facebook</h3>
+                    <p>ChangeByDesignCBA</p>
+                </div>
+            </article>
+            <article class="mainContactosFlexItem">
+                <div>
+                    <img class="filterLogo" src="../assets/images/logoGmail.png" alt="gmail">
+                </div>
+                <div class="posicionTextoContactos">
+                    <h3>Gmail</h3>
+                    <p>chgBydesign@gmail.com</p>
+                </div>
+            </article>
+        </div>
 
-        
-        <section class="forms">
-            <h2>Realiza tu consulta</h2>
-            <div>
-                <form class="formularioContacto">
-                    <ul>
-                        <li><input type="text" placeholder="Nombre *"></li>
-                        <li><input type="text" placeholder="Apellido *"></li>
-                        <li><input type="email" placeholder="Correo *"></li>
-                        <li><input type="text" placeholder="Asunto *"></li>
-                        <li><input type="number" placeholder="Celular"></li>
-                        <li><input type="textarea" placeholder="Mensaje *"></li>
-                    </ul>
-                    <input type="submit" value="Enviar">
-                </form>
+        <section class="sectionContactosForm">
+            <div class="divForm">
+                <h2>Realiza tu consulta</h2>
+
+                <div>
+                    <form class="contactosForms">
+                        <ul>
+                            <li class="liFormItem"><input type="text" placeholder="Nombre *"></li>
+                            <li class="liFormItem"><input type="text" placeholder="Apellido *"></li>
+                            <li class="liFormItem"><input type="email" placeholder="Correo *"></li>
+                            <li class="liFormItem"><input type="text" placeholder="Asunto *"></li>
+                            <li class="liFormItem"><input type="number" placeholder="Celular"></li>
+                            <li class="liFormItem mensajeArea"><input type="textarea" placeholder="Mensaje *" class="mensajeArea"></li>
+                        </ul>
+                        <button class="btnEnviar">Enviar</button>
+                    </form>
+                </div>
             </div>
             <div class="imagenConsultas">
                 <img src="../assets/images/imgConsultaContacto.png" alt="imagenConsultas">
