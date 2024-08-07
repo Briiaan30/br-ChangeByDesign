@@ -98,7 +98,7 @@ a {
     .contenedorHeader ul li:active {
         transform: scale(1.2);
     }
-
+}
     @media (max-width:426px) {
 
         .logoChgByDs {
@@ -673,8 +673,6 @@ a {
         .irArriba h4 {
             font-size: 14pt;
         }
-
-        .irArriba a img {}
     }
 
     @media (max-width:425px) {
@@ -714,13 +712,4 @@ a {
             width: 90%;
             height: 90%;
         }
-
     }
-
-
-    /* -- Media Querys --
-
-@media (max-width:1024px){}
-@media (max-width:768px){}
-@media (max-width:720px){}
-*/
