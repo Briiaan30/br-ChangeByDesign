@@ -294,6 +294,16 @@ main h1 {
         width: 90%;
     }
 
+    .mainGridItem5Unete {
+        background-size: 130px;
+        width: 80%;
+        justify-self: center;
+    }
+
+    .mainGridItem5Unete a {
+        font-size: 16pt;
+    }
+
     .gridUneteImg {
         width: 70%;
     }
@@ -324,13 +334,13 @@ main h1 {
     }
 
     .mainGridItem5Unete {
-        background-size: 140px;
+        background-size: 120px;
         width: 80%;
         justify-self: center;
     }
 
     .mainGridItem5Unete a {
-        font-size: 18pt;
+        font-size: 16pt;
     }
 
     .mainNuestrosServicios {
@@ -531,7 +541,7 @@ main h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    
 }
 
 .contenedorFooter ul {
@@ -616,7 +626,7 @@ main h1 {
 @media (max-width:769px) {
 
     .contenedorFooter{
-        width:768px;
+        width: 960px;
     }
 
     .contenedorFooter ul {
@@ -633,7 +643,7 @@ main h1 {
     
     .irArriba{
         width: 50%;
-        justify-content: center;
+        justify-content: end;
     }
 
     .irArriba h4 {
@@ -641,8 +651,7 @@ main h1 {
     }
 
     .irArriba a img{
-        width: 60%;
-        height: 60%;
+        
     }
 }
 
@@ -650,7 +659,6 @@ main h1 {
     
     .contenedorFooter{
         height: 100px;
-        
     }
 
     .footerContactos {
