@@ -1,27 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
+/* Original */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
-    font-family: "Manrope", sans-serif;
     background-image: url(../assets/images/fondoLapicesColores.jpg);
     background-size: cover;
     background-position: center;
-    display: flex;
-    /*quitar por las dudas*/
-    flex-direction: column;
-    /*quitar por las dudas*/
+    font-family: "Manrope", sans-serif !important;
 }
 
 a {
     text-decoration: none;
 }
-
 
 /* --------------------------------- Header --------------------------------- */
 
@@ -38,15 +34,16 @@ a {
 }
 
 .contenedorHeader {
-    background-color: rgba(0, 0, 0, 0.733);
+    background-color: rgba(0, 0, 0, 0.824);
     width: 100%;
     position: fixed;
     z-index: 2;
 }
 
-
 .contenedorHeader ul {
     width: 100%;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,20 +51,34 @@ a {
 
 .contenedorHeader ul a {
     width: 100%;
-
+    padding: 5px;
+    margin: auto;
 }
 
 .contenedorHeader ul li {
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid white;
     list-style-type: none;
-
+    transform: scale(1);
+    transition: transform 0.22s ease-in-out;
 }
 
 .contenedorHeader ul li a {
     color: white;
     font-weight: bold;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 0px 10px;
+
+}
+
+.contenedorHeader ul li:hover {
+    transform: scale(1.2);
+    transition: transform 0.22s ease-in-out;
+}
+
+.contenedorHeader ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.231);
+    transform: scale(1.3);
 }
 
 @media (max-width:768px) {
@@ -76,14 +87,44 @@ a {
     }
 }
 
+@media (max-width:426px) {
+
+    .logoChgByDs {
+        width: 6rem;
+        height: 6rem;
+        margin: 10px;
+        
+    }
+
+    .logoPortada{
+        height: 22rem;
+        margin-top: 130px;
+    }
+
+    .contenedorHeader ul li {
+        font-size: 18pt;
+    }
+
+    .contenedorHeader ul li:hover {
+        transform: none;
+        transition: none;
+    }
+
+    .contenedorHeader ul li:active{
+        transform: scale(1.2);
+    }
+
+}
+
 /* -------------------------- Index -------------------------- */
 
 main h1 {
     background-color: rgba(255, 176, 30, 0.247);
     text-align: center;
     padding: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 30pt;
+    font-weight: bold;
 }
 
 .mainGridContainer {
@@ -95,11 +136,10 @@ main h1 {
     text-align: center;
     width: 75%;
     margin: auto;
-    padding-top: 20px;
 }
 
 .mainGridItem1 img {
-    width: 32rem;
+    width: 90%;
     filter: drop-shadow(2px 2px 5px);
 }
 
@@ -109,13 +149,14 @@ main h1 {
 }
 
 .mainGridItem3 {
+    width: 100%;
     font-size: 14pt;
-    width: 80%;
 }
 
 .mainGridItem3 h3 {
     font-size: 20pt;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .mainGridItem4 img {
@@ -134,17 +175,18 @@ main h1 {
     margin: 40px
 }
 
-.mainNuestrosServicios ul {
+.mainNSLista {
     display: grid;
     width: 70%;
     margin: auto;
+    padding-left: 20px;
     grid-template-rows: repeat(4, 1fr);
-    height: 20rem;
+    height: 25rem;
     align-items: center;
     gap: 10px;
 }
 
-.mainNuestrosServicios ul li {
+.mainNSLista li {
     font-size: 16pt;
 }
 
@@ -162,8 +204,8 @@ main h1 {
     margin: auto;
     margin-top: 30px;
     margin-bottom: 50px;
-    width: 90%;
-    height: 100vh;
+    width: 95%;
+    height: 80vh;
 }
 
 .mainGridItem1Unete {
@@ -222,41 +264,100 @@ main h1 {
 }
 
 .gridUneteImg {
-    width: 55%;
+    width: 65%;
     filter: drop-shadow(2px 2px 5px);
 }
 
-@media (max-width:1024px){
+@media (max-width:1025px) {
 
-    .mainGridItem1 img{
+    .mainGridItem1 img {
         width: 90%;
     }
 
-    .mainGridItem2 p{
+    .mainGridItem2 p {
         width: 100%;
-        font-size: 12pt;
+        font-size: 14pt;
     }
 
-    .mainGridItem3 h3{
-        font-size: 18pt;
+    .mainGridItem3 h3 {
+        font-size: 20pt;
+        margin: 5px;
     }
 
-    .mainGridItem3 p{
-        font-size: 12pt;
+    .mainGridItem3 p {
+        width: 100%;
+        font-size: 14pt;
+
     }
 
-    .mainGridItem4 img{
+    .mainGridItem4 img {
         width: 90%;
     }
 
     .gridUneteImg {
-        width: 60%;
+        width: 70%;
     }
 }
 
-@media (max-width:425px){
-    
+@media (max-width:769px) {
+
+    .mainGridItem1 img {
+        width: 100%;
+    }
+
+    .mainGridItem2 p {
+        width: 100%;
+        font-size: 10pt;
+    }
+
+    .mainGridItem3 h3 {
+        font-size: 16pt;
+    }
+
+    .mainGridItem3 p {
+        width: 100%;
+        font-size: 10pt;
+    }
+
+    .mainGridItem4 img {
+        width: 90%;
+    }
+
+    .mainGridItem5Unete {
+        background-size: 140px;
+        width: 80%;
+        justify-self: center;
+    }
+
+    .mainGridItem5Unete a {
+        font-size: 18pt;
+    }
+
+    .mainNuestrosServicios {
+        padding: 5px;
+    }
+
+    .mainNuestrosServicios h2 {
+        font-size: 20pt;
+        margin: 10px
+    }
+
+    .mainNSLista {
+        height: 15rem;
+        gap: 0;
+    }
+
+    .mainNSLista li p {
+        font-size: 12pt;
+    }
+
+    .gridUneteImg {
+        width: 70%;
+    }
+
 }
+
+@media (max-width:425px) {}
 
 /* -------------------------- Contactos -------------------------- */
 
@@ -281,7 +382,7 @@ main h1 {
         margin: auto;
     }
 
-    .imagenConsultas img{
+    .imagenConsultas img {
         width: 80%;
     }
 }
@@ -426,27 +527,24 @@ main h1 {
 /* --------------------------------- Footer --------------------------------- */
 
 .contenedorFooter {
-    background-color: rgba(0, 0, 0, 0.733);
+    background-color: rgba(0, 0, 0, 0.807);
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-@media (max-width:768px) {
-    .contenedorFooter {
-        width: 960px;
-    }
+    width: 100%;
 }
 
 .contenedorFooter ul {
     display: flex;
+    justify-content: start;
     align-items: center;
     gap: 15px;
     padding: 10px;
+    width: 50%;
 
 }
 
-.contenedorFooter li {
+.contenedorFooter ul li {
     list-style-type: none;
 }
 
@@ -468,22 +566,26 @@ main h1 {
     font-size: 12pt;
     font-weight: bold;
     text-align: center;
-    padding-right: 6.25rem;
-    width: 22rem;
+    color: white;
 }
 
 .irArriba {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     color: white;
-    gap: 10px;
-
+    gap: 5px;
+    width: 50%;
 }
 
 .irArriba h4 {
     font-size: 16pt;
     font-weight: bold;
+}
+
+.irArriba a{
+    text-align: center;
+    padding-top: 5px;
 }
 
 .irArriba a img {
@@ -492,14 +594,99 @@ main h1 {
     margin: 5px;
 }
 
-.contenedorFooter p {
-    color: white;
+@media (max-width:1025px) {
+    
+    .contenedorFooter ul {
+        gap:5px;
+    }
+
+    .footerContactos{
+        font-size: 14pt;
+    }
+
+    .contenedorFooter ul li a img {
+        transform: scale(0.8);
+    }
+    
+    .irArriba h4 {
+        font-size: 14pt;
+    }
 }
 
-.flexFooterContactos {
-    display: flex;
+@media (max-width:769px) {
+
+    .contenedorFooter{
+        width:768px;
+    }
+
+    .contenedorFooter ul {
+        gap:1px;
+    }
+
+    .footerContactos{
+        font-size: 14pt;
+    }
+
+    .contenedorFooter ul li a img {
+        transform: scale(0.8);
+    }
+    
+    .irArriba{
+        width: 50%;
+        justify-content: center;
+    }
+
+    .irArriba h4 {
+        font-size: 14pt;
+    }
+
+    .irArriba a img{
+        width: 60%;
+        height: 60%;
+    }
+}
+
+@media (max-width:425px){
+    
+    .contenedorFooter{
+        height: 100px;
+        
+    }
+
+    .footerContactos {
+        display: none;
+        
+    }
+
+    .contenedorFooter ul {
+        gap: 1px;
+        
+    }
+
+    .contenedorFooter ul li a {
+        margin: 0 10px;
+        
+    }
+
+    .contenedorFooter ul li a img {
+        transform: scale(1.2);
+    }
+
+    .contenedorFooter p {
+        font-size: 16pt;
+    }
+
+    .irArriba h4{
+        font-size: 16pt;
+    }
+
+    .irArriba a img{
+        width: 90%;
+        height: 90%;
+    }
 
 }
+
 
 /* -- Media Querys --
 
