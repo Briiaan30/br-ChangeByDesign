@@ -33,6 +33,10 @@ a {
 
 }
 
+.menuHamburguesa {
+    display: none;
+}
+
 .contenedorHeader {
     background-color: rgba(0, 0, 0, 0.824);
     width:100%;
@@ -116,13 +120,13 @@ a {
         }
 
         .contenedorHeader ul a {
-            
             padding: 0px;
             margin: 0px;
         }
 
         .contenedorHeader ul li {
             font-size: 18pt;
+            display: none;
         }
 
         .contenedorHeader ul li:hover {
