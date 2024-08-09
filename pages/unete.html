@@ -13,21 +13,40 @@
 
 <body id="irArriba">
     <header>
-        <nav class="contenedorHeader">
-            <ul>
+        <nav class="contenedorHeader navbar navbar-expand-lg justify-content-around">
+            <ul id="displayTrue">
                 <a href="../index.html"><img class="logoChgByDs" src="../assets/images/logoChgByDs.png"
                         alt="Inicio"></a>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./contactos.html">Contacto</a></li>
                 <li><a href="./diseños.html">Diseños</a></li>
                 <li><a href="#">Únete</a></li>
-                <img class="menuHamburguesa" src="../assets/images/menuHamburguesa.svg">
             </ul>
+
+            <div class="displayNone">
+                <div class="row justify-content-between">
+                    <a class="col-6 " href="#"><img class="logoChgByDs" src="../assets/images/logoChgByDs.png"
+                            alt="Inicio"></a>
+                    <button class=" navbar-toggler menuHamburguesaSinBorde" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <img class="menuHamburguesaImg" src="../assets/images/menuHamburguesa.svg" alt="">
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ps-1"> <a class="fs-5 fw-bold" href="../index.html">Inicio</a></li>
+                            <li class="nav-item"> <a class="fs-5 fw-bold" href="./contactos.html">Contacto</a></li>
+                            <li class="nav-item"> <a class="fs-5 fw-bold" href="./diseños.html">Diseños</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
 
         <img class="logoPortada" src="../assets/images/portadaPrincipal.png" alt="Portada-ChangeByDesign">
 
     </header>
+
     <main>
         <h1 class="tituloPrincipal">¡Únete al equipo!</h1>
         <article class="containter text-center pt-4 pb-4">

@@ -13,20 +13,41 @@
 
 <body id="irArriba">
     <header>
-        <nav class="contenedorHeader">
-            <ul>
-                <a href="../index.html"><img class="logoChgByDs" src="../assets/images/logoChgByDs.png" alt="Inicio"></a>
+        <nav class="contenedorHeader navbar navbar-expand-lg justify-content-around">
+            <ul id="displayTrue">
+                <a href="../index.html"><img class="logoChgByDs" src="../assets/images/logoChgByDs.png"
+                        alt="Inicio"></a>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./contactos.html">Contacto</a></li>
                 <li><a href="#">Diseños</a></li>
                 <li><a href="./unete.html">Únete</a></li>
-                <img class="menuHamburguesa" src="../assets/images/menuHamburguesa.svg">
             </ul>
+
+            <div class="displayNone">
+                <div class="row justify-content-between">
+                    <a class="col-6 " href="#"><img class="logoChgByDs" src="../assets/images/logoChgByDs.png"
+                            alt="Inicio"></a>
+                    <button class=" navbar-toggler menuHamburguesaSinBorde" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <img class="menuHamburguesaImg" src="../assets/images/menuHamburguesa.svg" alt="">
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ps-1"> <a class="fs-5 fw-bold" href="../index.html">Inicio</a></li>
+                            <li class="nav-item"> <a class="fs-5 fw-bold" href="./contactos.html">Contacto</a></li>
+                            <li class="nav-item"> <a class="fs-5 fw-bold" href="./unete.html">Únete</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
+
         <img class="logoPortada" src="../assets/images/portadaPrincipal.png" alt="Portada-ChangeByDesign">
+
     </header>
     <main>
-        <h1 class="tituloPrincipal fs-1">Diseños que Marcan</h1>
+        <h1 class="tituloPrincipal">Diseños que Marcan</h1>
         <article class="containter  text-center fs-5">
             <div class="row d-flex justify-content-center align-items-center mainDiseñosParrafosIniciales">
 
@@ -37,10 +58,8 @@
                     <br><br>
                     Nuestro equipo se dedica a ofrecer soluciones únicas y a medida, asegurando la máxima calidad y
                     satisfacción.
-
                 </p>
                 <p class="col-4">
-
                     No dudes en contactarnos para más información sobre nuestros servicios y sus cotizaciones.
                     Estamos aquí para ayudarte a materializar tus ideas y proyectos.
                 </p>
@@ -51,7 +70,7 @@
                 <a class="col-6 align-self-center" href="./subdiseños.html"><img class="w-75 rounded-4 mainImagenesPuestosTrabajo"
                         src="../assets/images/diseñosCSSCraftworks.jpg" alt="cssCraftworks"></a>
                 <div class="container col-5 align-content-center mainFondoDescTrabajo">
-                    <h2 class="text-center pb-3 fw-bold">CSS Craftworks</h2>
+                    <h2 class="text-center pt-3 pb-3 fw-bold">CSS Craftworks</h2>
                     <p class="fs-5">
                         Maestros en Estilos y Diseño Web:
                         Expertos en transformar la apariencia y la usabilidad de los sitios web a
@@ -66,7 +85,7 @@
                 <a class="col-6 align-self-center" href="./subdiseños.html"><img class="w-75 rounded-4 mainImagenesPuestosTrabajo"
                         src="../assets/images/diseñosAngularAlchemy.jpg" alt="cssCraftworks"></a>
                 <div class="container col-5 align-content-center mainFondoDescTrabajo">
-                    <h2 class="text-center pb-3 fw-bold">Angular Alchemy</h2>
+                    <h2 class="text-center pt-3 pb-3 fw-bold">Angular Alchemy</h2>
                     <p class="fs-5">
                         Transformando Ideas en Realidad con AngularJS:
                         Especializados en el desarrollo de aplicaciones dinámicas y de alto rendimiento con AngularJS,
@@ -81,7 +100,7 @@
                 <a class="col-6 align-self-center" href="./subdiseños.html"><img class="w-75 rounded-4 mainImagenesPuestosTrabajo"
                         src="../assets/images/diseñosJavaGenesis.jpg" alt="cssCraftworks"></a>
                 <div class="container col-5 align-content-center mainFondoDescTrabajo">
-                    <h2 class="text-center pb-3 fw-bold">Java Genesis</h2>
+                    <h2 class="text-center pt-3 pb-3 fw-bold">Java Genesis</h2>
                     <p class="fs-5">
                         Creando el Futuro con Java Genesis:
                         Líderes en el desarrollo de aplicaciones robustas y seguras utilizando Java, proporcionando
@@ -97,7 +116,7 @@
                 <a class="col-6 align-self-center" href="./subdiseños.html"><img class="w-75 rounded-4 mainImagenesPuestosTrabajo"
                         src="../assets/images/diseñosPythonPros.jpg" alt="cssCraftworks"></a>
                 <div class="container col-5 align-content-center mainFondoDescTrabajo">
-                    <h2 class="text-center pb-3 fw-bold">Python Pros</h2>
+                    <h2 class="text-center pt-3 pb-3 fw-bold">Python Pros</h2>
                     <p class="fs-5">
                         Revolucionando el Desarrollo con Python:
                         Pioneros en el uso de Python para crear aplicaciones innovadoras y eficientes, ofreciendo
