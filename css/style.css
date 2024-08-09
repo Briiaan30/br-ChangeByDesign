@@ -30,7 +30,6 @@ a {
 .logoPortada {
     width: 100%;
     height: 15.625rem;
-
 }
 
 .menuHamburguesa {
@@ -385,7 +384,7 @@ a {
 }
 
 /* --------------------------------------------- */
-/* ------------------ Unete -------------------- */
+/* ------------------ Únete -------------------- */
 /* --------------------------------------------- */
 
 .uneteImgDiseFutur{
@@ -398,6 +397,7 @@ a {
 
 .contenedorFooter {
     background-color: rgba(0, 0, 0, 0.807);
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
