@@ -409,7 +409,6 @@ a {
 
 .contenedorFooter ul {
     display: flex;
-    justify-content: start;
     align-items: center;
     gap: 15px;
     padding: 10px;
@@ -435,7 +434,7 @@ a {
     font-size: 16pt;
 }
 
-.contenedorFooter p {
+.indexParrafoFooter {
     font-size: 12pt;
     font-weight: bold;
     text-align: center;
@@ -466,6 +465,34 @@ a {
     height: 3.5rem;
     margin: 5px;
 }
+
+/* ---- Menu hamburguesa ---- */
+.menuHamburguesaImg{
+    width: 70px;
+    display: none;
+}
+
+.dropdown-toggle-split::after {
+    display: none;
+}
+
+.menuHamburguesaSinBorde{
+    border: none;
+    background-image: url(../assets/images/menuHamburguesa.svg);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    width: 70px;
+    height: 70px;
+}
+
+.menuHamburguesaSinBorde:focus{
+    box-shadow: none;
+}
+
+.menuHamburguesaSinBorde:hover{
+    box-shadow: 0px 0px 2px 2px white;
+}
+
 
 /* --------------------------------------------- */
 /* --------------- MediaQuerys ----------------- */
@@ -647,6 +674,7 @@ a {
 
 @media (max-width:426px) {
 
+    /* ---- Header ---- */
     #displayTrue{
         display: none;
     }
@@ -671,32 +699,45 @@ a {
         padding: 3px 0px;
     }
 
+    /* ---- Footer ---- */
+    .contenedorFooter{
+        padding: .125rem;
+    }
+
+    .contenedorFooter ul{
+        padding-left: 10px;
+        margin: 0px;
+    }
+
+    .indexIconHidden{
+        display: none;
+    }
+
+    .indexParrafoFooter{
+        font-size: 9pt;
+        align-self: center;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .irArriba h4{
+        margin: 0px;
+        font-size: 12pt;
+    }
+
+    .irArriba a{
+        padding: 0px;
+    }
+
+    .irArriba a img{
+        margin: 0px;
+        margin-right: .3125rem;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    /* ---- Index ---- */
+    
 }
 
 
-/* ---- Menu hamburguesa ---- */
-.menuHamburguesaImg{
-    width: 70px;
-    display: none;
-}
-
-.dropdown-toggle-split::after {
-    display: none;
-}
-
-.menuHamburguesaSinBorde{
-    border: none;
-    background-image: url(../assets/images/menuHamburguesa.svg);
-    background-repeat: no-repeat;
-    object-fit: contain;
-    width: 70px;
-    height: 70px;
-}
-
-.menuHamburguesaSinBorde:focus{
-    box-shadow: none;
-}
-
-.menuHamburguesaSinBorde:hover{
-    box-shadow: 0px 0px 2px 2px white;
-}
