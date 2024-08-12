@@ -544,7 +544,6 @@ a {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         justify-items: center;
-        width: 45rem;
         margin: auto;
     }
 
@@ -644,8 +643,7 @@ a {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         justify-items: center;
-        width: 45rem;
-        margin: auto;
+        /* margin: auto; */
     }
 
     /* ---- Footer ----  */
@@ -763,6 +761,20 @@ a {
 
     .mainGridItem5Unete a{
         width: 50%;
+    }
+
+    /* ---- Contactos ---- */
+
+    .mainContactosFlex{
+        grid-template-columns: 1fr;
+    }
+
+    .sectionContactosForm{
+        grid-template-columns: 1fr;
+    }
+
+    .imagenConsultas{
+        display: none;
     }
 }
 
