@@ -142,7 +142,6 @@ a {
 
 .mainNuestrosServicios {
     padding: 50px;
-    height: 100vh;
 }
 
 .mainNuestrosServicios h2 {
@@ -742,6 +741,10 @@ a {
     
     .mainGridItem3 h3{
         font-size: 18pt;
+    }
+
+    .mainNuestrosServicios {
+        height: 90vh;
     }
 
     .mainGridContainerUnete{
