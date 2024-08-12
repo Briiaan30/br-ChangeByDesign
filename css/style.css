@@ -391,8 +391,8 @@ a {
 /* --------------------------------------------- */
 
 .uneteImgDiseFutur{
-    margin: 10px;
-    width: 35rem;
+    /* margin: 10px;
+    width: 100%; */
 }
 
 /* ------------------- Footer ------------------- */
@@ -746,8 +746,28 @@ a {
 
     .mainDiseñosResponsiveW100{
         width: 100%;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+    }
+
+    /* ---- Únete ---- */
+    .mainUneteGrid{
+        display: grid !important;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .mainUneteGridItem{
+        width: 50vh;
+    }
+
+    .ajustePosicionAbajo{
+        grid-row: 2/3;
+    }
+
+    .ajustePosicionArriba{
+        grid-row: 1/2;
     }
 
     /* ---- Footer ---- */
