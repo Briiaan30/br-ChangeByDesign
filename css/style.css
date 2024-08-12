@@ -695,43 +695,6 @@ a {
         padding: 3px 0px;
     }
 
-    /* ---- Footer ---- */
-    .contenedorFooter{
-        padding: .125rem;
-    }
-
-    .contenedorFooter ul{
-        padding-left: 10px;
-        margin: 0px;
-    }
-
-    .indexIconHidden{
-        display: none;
-    }
-
-    .indexParrafoFooter{
-        font-size: 9pt;
-        align-self: center;
-        padding: 0px;
-        margin: 0px;
-    }
-
-    .irArriba h4{
-        margin: 0px;
-        font-size: 12pt;
-    }
-
-    .irArriba a{
-        padding: 0px;
-    }
-
-    .irArriba a img{
-        margin: 0px;
-        margin-right: .3125rem;
-        width: 2rem;
-        height: 2rem;
-    }
-
     /* ---- Index ---- */
 
     .mainGridContainer{
@@ -777,6 +740,51 @@ a {
 
     .imagenConsultas{
         display: none;
+    }
+
+    /* ---- Diseños ---- */
+
+    .mainDiseñosResponsiveW100{
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    /* ---- Footer ---- */
+    .contenedorFooter{
+        padding: .125rem;
+    }
+
+    .contenedorFooter ul{
+        padding-left: 10px;
+        margin: 0px;
+    }
+
+    .indexIconHidden{
+        display: none;
+    }
+
+    .indexParrafoFooter{
+        font-size: 9pt;
+        align-self: center;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .irArriba h4{
+        margin: 0px;
+        font-size: 12pt;
+    }
+
+    .irArriba a{
+        padding: 0px;
+    }
+
+    .irArriba a img{
+        margin: 0px;
+        margin-right: .3125rem;
+        width: 2rem;
+        height: 2rem;
     }
 }
 
