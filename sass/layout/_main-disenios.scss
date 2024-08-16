@@ -1,0 +1,23 @@
+.mainDiseñosParrafosIniciales{
+    gap: 50px;
+}
+
+.mainImagenesPuestosTrabajo{
+    filter: drop-shadow(2px 3px 4px black);
+}
+
+.fondoNaranjaParrafos{
+    background-color: rgba(255, 194, 119, 0.876);
+    border: 1 px solid transparent;
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 4px rgb(117, 72, 17));
+}
+
+.mainDiseñosAHover{
+    transform: scale(1);
+    transition: transform 0.22s ease-in-out;
+    &:hover{
+        transform: scale(0.95);
+    transition: transform 0.22s ease-in-out;
+    }
+}

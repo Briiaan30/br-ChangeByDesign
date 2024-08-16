@@ -39,10 +39,15 @@
 /* ------ Layout ------ */
 @import "./layout/header";
 @import "./layout/main-index";
+@import "./layout/main-contactos";
+@import "./layout/main-disenios";
+@import "./layout/main-unete";
+@import "./layout/main-subdisenios";
 @import "./layout/footer";
 
 /* ------ Components ------ */
 @import "./components/navbar";
+@import "./components/bgOrange";
 
 /* ------ Media Querys ------ */
 @import "./layout/media/media1024";

@@ -25,9 +25,22 @@
     }
 }
 
+.footerContactos {
+    font-size: 16pt;
+    margin: auto;
+}
+
 .footerContactoLogo {
     width: 3.5rem;
     height: 3.5rem;
+}
+
+.indexParrafoFooter {
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin: auto;
 }
 
 .irArriba {
@@ -37,4 +50,18 @@
     color: white;
     column-gap: 10px;
     width: 50%;
+
+    h4 {
+        font-size: 16pt;
+        font-weight: bold;
+        margin: auto 0;
+    }
+
+    a {
+        img {
+            width: 3.5rem;
+            height: 3.5rem;
+            margin: 5px;
+        }
+    }
 }
