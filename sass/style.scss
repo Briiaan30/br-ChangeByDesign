@@ -1,20 +1,50 @@
-/* Utilities */
+// .navbar1{
+//     @include flex;
+//     color: red;
+// }
+
+// .navbar2{
+//     @extend .navbar1;
+//     color: black;
+// }
+
+// .item{
+//     @include flex2(center, end, 5px);
+// }
+
+// @mixin flex{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     gap:10px;
+// }
+
+// @mixin flex2 ($justify, $align, $gap){
+//     display: flex;
+//     justify-content: $justify;
+//     align-items: $align;
+//     gap: $gap;
+// }
+
+
+/* ------ Utilities ------*/
 @import "./utilities/variables";
 @import "./utilities/mixins";
 
-/* Base */
+/* ------ Base ------ */
 @import "./base/reset";
 // @import "./base/typographies";
 
 
-/* Layout */
+/* ------ Layout ------ */
 @import "./layout/header";
-@import "./layout/main";
+@import "./layout/main-index";
+@import "./layout/footer";
 
-/* Components */
+/* ------ Components ------ */
 @import "./components/navbar";
 
-/* Media Querys */
+/* ------ Media Querys ------ */
 @import "./layout/media/media1024";
 @import "./layout/media/media768";
 @import "./layout/media/media425";
