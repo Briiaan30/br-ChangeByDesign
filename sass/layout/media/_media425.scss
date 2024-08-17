@@ -1,5 +1,139 @@
-@media (max-width:426px){
+@media (max-width:426px) {
+
+    /* ---- Header ---- */
     #displayTrue{
         display: none;
+    }
+    .menuHamburguesa {
+        display: flex;
+        width: 4rem;
+        height: 4rem;
+        margin: 10px;
+        justify-content: space-between;
+    }
+
+    .displayNone{
+        display: flex;
+    }
+
+    .contenedorHeader ul li a{
+        border: none;
+        border-radius: none;
+    }
+
+    .contenedorHeader ul li{
+        padding: 3px 0px;
+    }
+
+    /* ---- Index ---- */
+
+    .mainGridContainer{
+        grid-template-columns: 1fr;
+    }
+    
+    .mainGridItem3 h3{
+        font-size: 18pt;
+    }
+
+    .mainNuestrosServicios {
+        height: 90vh;
+    }
+
+    .mainGridContainerUnete{
+        display: flex;
+        height: 100%;
+        flex-wrap: wrap;
+        row-gap: 1.25rem;
+        margin: auto;
+        margin-top: 0;
+    }
+
+    .mainGridItem5Unete{
+        margin-top: .9375rem;
+        margin-bottom: .9375rem;
+        height: 7rem;
+    }
+
+    .mainGridItem5Unete a{
+        width: 50%;
+    }
+
+    /* ---- Contactos ---- */
+
+    .mainContactosFlex{
+        grid-template-columns: 1fr;
+    }
+
+    .sectionContactosForm{
+        grid-template-columns: 1fr;
+    }
+
+    .imagenConsultas{
+        display: none;
+    }
+
+    /* ---- Diseños ---- */
+
+    .mainDiseñosResponsiveW100{
+        width: 100%;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+    }
+
+    /* ---- Únete ---- */
+    .mainUneteGrid{
+        display: grid !important;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .mainUneteGridItem{
+        width: 50vh;
+    }
+
+    .ajustePosicionAbajo{
+        grid-row: 2/3;
+    }
+
+    .ajustePosicionArriba{
+        grid-row: 1/2;
+    }
+
+    /* ---- Footer ---- */
+    .contenedorFooter{
+        padding: .125rem;
+    }
+
+    .contenedorFooter ul{
+        padding-left: 10px;
+        margin: 0px;
+    }
+
+    .indexIconHidden{
+        display: none;
+    }
+
+    .indexParrafoFooter{
+        font-size: 9pt;
+        align-self: center;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .irArriba h4{
+        margin: 0px;
+        font-size: 12pt;
+    }
+
+    .irArriba a{
+        padding: 0px;
+    }
+
+    .irArriba a img{
+        margin: 0px;
+        margin-right: .3125rem;
+        width: 2rem;
+        height: 2rem;
     }
 }
