@@ -45,7 +45,6 @@ a {
 }
 .mainGridContainer .mainGridItem1 img {
   width: 90%;
-  filter: drop-shadow(2px 2px 5px);
 }
 .mainGridContainer .mainGridItem2 {
   font-size: 14pt;
@@ -62,85 +61,87 @@ a {
 }
 .mainGridContainer .mainGridItem4 img {
   width: 90%;
-  filter: drop-shadow(2px 2px 5px);
   margin: 10px;
+}
+.mainGridContainer img {
+  border-radius: 20px;
 }
 
 .mainNuestrosServicios {
   padding: 50px;
 }
 .mainNuestrosServicios h2 {
-  font-size: 26pt;
   text-align: center;
+  font-size: 26pt;
+  font-weight: bold;
   margin: 40px;
 }
 .mainNuestrosServicios .mainNSLista {
   display: grid;
+  justify-content: center;
+  align-items: center;
   width: 70%;
   margin: auto;
-  padding-left: 20px;
+  padding: 20px;
   grid-template-rows: repeat(4, 1fr);
-  align-items: center;
-  gap: 10px;
+  row-gap: 30px;
 }
 .mainNuestrosServicios .mainNSLista li {
   font-size: 16pt;
+}
+.mainNuestrosServicios .mainNSLista li p {
+  margin: 8px 10px;
 }
 .mainNuestrosServicios .mainNSLista li p .mainNSSpan {
   font-weight: bold;
   text-decoration: underline;
 }
 
-.mainGridContainerUnete {
+.mainIndexGridPuestos {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   justify-content: center;
   align-items: center;
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 50px;
-  width: 95%;
-  height: 80vh;
+  margin: 30px 30px;
 }
-.mainGridContainerUnete .mainGridItem1Unete {
+.mainIndexGridPuestos .mainIndexGridItemPuesto1 {
   display: flex;
   grid-column: 1/3;
   grid-row: 1/3;
   justify-content: center;
 }
-.mainGridContainerUnete .mainGridItem2Unete {
+.mainIndexGridPuestos .mainIndexGridItemPuesto2 {
   display: flex;
   grid-column: 2/4;
   grid-row: 2/4;
   justify-content: center;
 }
-.mainGridContainerUnete .mainGridItem3Unete {
+.mainIndexGridPuestos .mainIndexGridItemPuesto3 {
   display: flex;
   grid-column: 3/5;
   grid-row: 3/5;
   justify-content: center;
 }
-.mainGridContainerUnete .mainGridItem4Unete {
+.mainIndexGridPuestos .mainIndexGridItemPuesto4 {
   display: flex;
   grid-column: 4/6;
   grid-row: 4/6;
   justify-content: center;
 }
-.mainGridContainerUnete .mainGridItem5Unete {
+.mainIndexGridPuestos .mainIndexGridItemPropuesta {
   display: flex;
   align-items: center;
   justify-content: center;
   grid-column: 5/6;
   grid-row: 1/2;
-  width: 100%;
-  height: 100%;
+  height: 20vh;
   background-image: url(../assets/images/indexGridUnete5.png);
-  background-size: 160px;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
-.mainGridContainerUnete .mainGridItem5Unete a {
+.mainIndexGridPuestos .mainIndexGridItemPropuesta a {
   font-size: 20pt;
   font-weight: bold;
   text-align: center;
@@ -157,10 +158,8 @@ a {
 .mainContactosFlex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  column-gap: 10px;
-  row-gap: 20px;
   padding: 10px;
 }
 .mainContactosFlex .mainContactosFlexItem {
@@ -170,8 +169,8 @@ a {
   box-shadow: 0px 0px 4px 2px rgba(126, 76, 0, 0.59);
   border-radius: 12px;
   background-color: rgba(255, 166, 0, 0.384);
-  width: 20rem;
   padding: 15px;
+  width: 20rem;
 }
 
 .sombraLogo {
@@ -450,7 +449,7 @@ a {
   transform: scale(1.3);
 }
 
-.displayNone {
+.displayFlex {
   display: none;
 }
 
@@ -508,12 +507,12 @@ a {
   .mainGridItem4 img {
     width: 90%;
   }
-  .mainGridItem5Unete {
+  .mainIndexGridItemPropuesta {
     background-size: 130px;
     width: 80%;
     justify-self: center;
   }
-  .mainGridItem5Unete a {
+  .mainIndexGridItemPropuesta a {
     font-size: 16pt;
   }
   .gridUneteImg {
@@ -522,11 +521,12 @@ a {
   /* ---- Contactos ---- */
   .mainContactosFlex {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 200px);
     grid-template-rows: repeat(2, 1fr);
-    align-content: center;
+    row-gap: 20px;
+    justify-content: space-around;
     justify-items: center;
-    margin: 0 auto;
+    align-content: stretch;
   }
   .imagenConsultas img {
     width: 80%;
@@ -546,6 +546,9 @@ a {
   }
 }
 @media (max-width: 769px) {
+  .tituloPrincipal {
+    font-size: 24pt;
+  }
   /* ---- Header ---- */
   .contenedorHeader ul li:hover {
     transform: none;
@@ -572,30 +575,32 @@ a {
   .mainGridItem4 img {
     width: 90%;
   }
-  .mainGridItem5Unete {
-    background-size: 120px;
-    width: 80%;
-    justify-self: center;
-  }
-  .mainGridItem5Unete a {
-    font-size: 16pt;
-  }
   .mainNuestrosServicios {
     padding: 5px;
+    height: 65rem;
   }
   .mainNuestrosServicios h2 {
     font-size: 20pt;
+    font-weight: bold;
     margin: 10px;
   }
-  .mainNSLista {
+  .mainNuestrosServicios .mainNSLista {
     height: 15rem;
     gap: 0;
   }
-  .mainNSLista li p {
+  .mainNuestrosServicios .mainNSLista li p {
     font-size: 12pt;
   }
+  .mainIndexGridPuestos .mainIndexGridItemPropuesta {
+    justify-self: center;
+    width: 80%;
+  }
+  .mainIndexGridPuestos .mainIndexGridItemPropuesta a {
+    width: 100%;
+    font-size: 16pt;
+  }
   .gridUneteImg {
-    width: 70%;
+    width: 15rem;
   }
   /* ---- Contactos ---- */
   .mainContactosFlex {
@@ -603,6 +608,22 @@ a {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
+  }
+  /* ---- Subdiseños ---- */
+  .subDiseniosSectionPrincipal .subDiseniosResponsive {
+    width: 35rem;
+    height: 20rem;
+  }
+  .subDiseniosSectionPrincipal p {
+    font-size: 12pt;
+    width: 50%;
+  }
+  .subDiseniosSectionPrincipalFinal p {
+    font-size: 14pt;
+  }
+  .subDiseniosSectionPrincipalFinal .subDiseniosReduccionImg {
+    width: 35rem;
+    height: 20rem;
   }
   /* ---- Footer ----  */
   .contenedorFooter ul {
@@ -623,9 +644,22 @@ a {
   }
 }
 @media (max-width: 426px) {
+  .tituloPrincipal {
+    font-size: 20pt;
+  }
   /* ---- Header ---- */
-  #displayTrue {
+  .contenedorHeader #displayBoolean {
     display: none;
+  }
+  .contenedorHeader .displayFlex {
+    display: flex;
+  }
+  .contenedorHeader ul li {
+    padding: 3px 0px;
+  }
+  .contenedorHeader ul li a {
+    border: none;
+    border-radius: none;
   }
   .menuHamburguesa {
     display: flex;
@@ -634,41 +668,40 @@ a {
     margin: 10px;
     justify-content: space-between;
   }
-  .displayNone {
-    display: flex;
-  }
-  .contenedorHeader ul li a {
-    border: none;
-    border-radius: none;
-  }
-  .contenedorHeader ul li {
-    padding: 3px 0px;
-  }
   /* ---- Index ---- */
   .mainGridContainer {
     grid-template-columns: 1fr;
   }
-  .mainGridItem3 h3 {
+  .mainGridContainer .mainGridItem3 h3 {
     font-size: 18pt;
   }
   .mainNuestrosServicios {
-    height: 90vh;
-  }
-  .mainGridContainerUnete {
     display: flex;
-    height: 100%;
-    flex-wrap: wrap;
-    row-gap: 1.25rem;
-    margin: auto;
-    margin-top: 0;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 20px;
+    height: 93.75rem;
   }
-  .mainGridItem5Unete {
+  .mainNuestrosServicios .mainNSLista {
+    text-align: justify;
+    margin: 0;
+    width: 350px;
+  }
+  .mainIndexGridPuestos {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 20px;
+  }
+  .mainIndexGridPuestos .mainIndexGridItemPropuesta {
     margin-top: 0.9375rem;
     margin-bottom: 0.9375rem;
     height: 7rem;
   }
-  .mainGridItem5Unete a {
-    width: 50%;
+  .mainIndexGridPuestos .mainIndexGridItemPropuesta a {
+    width: 40%;
   }
   /* ---- Contactos ---- */
   .mainContactosFlex {
@@ -681,10 +714,41 @@ a {
     display: none;
   }
   /* ---- Diseños ---- */
-  .mainDiseñosResponsiveW100 {
-    width: 100%;
+  .mainDiseñosParrafosIniciales {
+    gap: 5px;
+    font-size: 12pt;
+  }
+  .mainDiseñosResponsive {
+    width: 23rem;
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
+  }
+  .mainDiseñosResponsive .mainDiseñosAHover {
+    width: 100% !important;
+  }
+  /* ---- Subdiseños ---- */
+  .subDiseniosSectionPrincipal {
+    flex-direction: column;
+  }
+  .subDiseniosSectionPrincipal .subDiseniosResponsive {
+    width: 20rem;
+    height: 15rem;
+  }
+  .subDiseniosSectionPrincipal p {
+    width: 23rem;
+  }
+  .subDiseniosSectionPrincipal .subDiseniosReduccionImg {
+    width: 23rem;
+  }
+  .subDiseniosSectionPrincipalFinal p {
+    width: 23rem;
+    background-color: rgba(255, 194, 119, 0.876);
+    border: 1 px solid transparent;
+    border-radius: 20px;
+  }
+  .subDiseniosSectionPrincipalFinal .subDiseniosReduccionImg {
+    width: 20rem;
+    height: 10rem;
   }
   /* ---- Únete ---- */
   .mainUneteGrid {

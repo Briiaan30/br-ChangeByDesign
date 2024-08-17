@@ -1,9 +1,32 @@
 @media (max-width:426px) {
 
-    /* ---- Header ---- */
-    #displayTrue{
-        display: none;
+    .tituloPrincipal{
+        font-size: 20pt;
     }
+
+    /* ---- Header ---- */
+    .contenedorHeader {
+        #displayBoolean {
+            display: none;
+        }
+
+        .displayFlex {
+            display: flex;
+        }
+
+        ul {
+            li {
+                padding: 3px 0px;
+
+                a {
+                    border: none;
+                    border-radius: none;
+                }
+            }
+        }
+
+    }
+
     .menuHamburguesa {
         display: flex;
         width: 4rem;
@@ -12,125 +35,168 @@
         justify-content: space-between;
     }
 
-    .displayNone{
-        display: flex;
-    }
-
-    .contenedorHeader ul li a{
-        border: none;
-        border-radius: none;
-    }
-
-    .contenedorHeader ul li{
-        padding: 3px 0px;
-    }
-
     /* ---- Index ---- */
 
-    .mainGridContainer{
+    .mainGridContainer {
         grid-template-columns: 1fr;
-    }
-    
-    .mainGridItem3 h3{
-        font-size: 18pt;
+
+        .mainGridItem3 {
+            h3 {
+                font-size: 18pt;
+            }
+        }
     }
 
     .mainNuestrosServicios {
-        height: 90vh;
-    }
-
-    .mainGridContainerUnete{
         display: flex;
-        height: 100%;
-        flex-wrap: wrap;
-        row-gap: 1.25rem;
-        margin: auto;
-        margin-top: 0;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding-top: 20px;
+        height: 93.75rem;
+
+        .mainNSLista {
+            text-align: justify;
+            margin: 0;
+            width: 350px;
+        }
     }
 
-    .mainGridItem5Unete{
-        margin-top: .9375rem;
-        margin-bottom: .9375rem;
-        height: 7rem;
-    }
+    .mainIndexGridPuestos {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        row-gap: 20px;
 
-    .mainGridItem5Unete a{
-        width: 50%;
+        .mainIndexGridItemPropuesta {
+            margin-top: .9375rem;
+            margin-bottom: .9375rem;
+            height: 7rem;
+
+            a {
+                width: 40%;
+            }
+        }
     }
 
     /* ---- Contactos ---- */
 
-    .mainContactosFlex{
+    .mainContactosFlex {
         grid-template-columns: 1fr;
     }
 
-    .sectionContactosForm{
+    .sectionContactosForm {
         grid-template-columns: 1fr;
     }
 
-    .imagenConsultas{
+    .imagenConsultas {
         display: none;
     }
 
     /* ---- Diseños ---- */
 
-    .mainDiseñosResponsiveW100{
-        width: 100%;
-        padding-top: 0.6rem;
-        padding-bottom: 0.6rem;
+    .mainDiseñosParrafosIniciales {
+        gap: 5px;
+        font-size: 12pt;
     }
 
+    .mainDiseñosResponsive {
+        width: 23rem;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+
+        .mainDiseñosAHover {
+            width: 100% !important;
+        }
+    }
+
+
+    /* ---- Subdiseños ---- */
+
+    .subDiseniosSectionPrincipal {
+        flex-direction: column;
+
+        .subDiseniosResponsive {
+            width: 20rem;
+            height: 15rem;
+        }
+
+        p {
+            width: 23rem;
+        }
+
+        .subDiseniosReduccionImg {
+            width: 23rem;
+        }
+    }
+
+    .subDiseniosSectionPrincipalFinal {
+        p {
+            width: 23rem;
+            background-color: rgba(255, 194, 119, 0.876);
+            border: 1 px solid transparent;
+            border-radius: 20px;
+        }
+
+        .subDiseniosReduccionImg {
+            width: 20rem;
+            height: 10rem;
+        }
+    }
+
+
     /* ---- Únete ---- */
-    .mainUneteGrid{
+    .mainUneteGrid {
         display: grid !important;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         justify-items: center;
     }
 
-    .mainUneteGridItem{
+    .mainUneteGridItem {
         width: 50vh;
     }
 
-    .ajustePosicionAbajo{
+    .ajustePosicionAbajo {
         grid-row: 2/3;
     }
 
-    .ajustePosicionArriba{
+    .ajustePosicionArriba {
         grid-row: 1/2;
     }
 
     /* ---- Footer ---- */
-    .contenedorFooter{
+    .contenedorFooter {
         padding: .125rem;
     }
 
-    .contenedorFooter ul{
+    .contenedorFooter ul {
         padding-left: 10px;
         margin: 0px;
     }
 
-    .indexIconHidden{
+    .indexIconHidden {
         display: none;
     }
 
-    .indexParrafoFooter{
+    .indexParrafoFooter {
         font-size: 9pt;
         align-self: center;
         padding: 0px;
         margin: 0px;
     }
 
-    .irArriba h4{
+    .irArriba h4 {
         margin: 0px;
         font-size: 12pt;
     }
 
-    .irArriba a{
+    .irArriba a {
         padding: 0px;
     }
 
-    .irArriba a img{
+    .irArriba a img {
         margin: 0px;
         margin-right: .3125rem;
         width: 2rem;
