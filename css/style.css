@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url(../assets/images/fondoLapicesColores.jpg);
+  background-image: url("../assets/images/fondoLapicesColores.jpg");
   background-size: cover;
   background-position: center;
   font-family: "Manrope", sans-serif !important;
@@ -136,7 +136,7 @@ a {
   grid-column: 5/6;
   grid-row: 1/2;
   height: 20vh;
-  background-image: url(../assets/images/indexGridUnete5.png);
+  background-image: url("../assets/images/indexGridUnete5.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -455,7 +455,7 @@ a {
 
 .menuHamburguesaSinBorde {
   border: none;
-  background-image: url(../assets/images/menuHamburguesa.svg);
+  background-image: url("../assets/images/menuHamburguesa.svg");
   background-repeat: no-repeat;
   object-fit: contain;
   width: 70px;
