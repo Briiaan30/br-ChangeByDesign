@@ -264,13 +264,6 @@ a {
   gap: 50px;
 }
 
-.fondoNaranjaParrafos {
-  background-color: rgba(255, 194, 119, 0.876);
-  border: 1 px solid transparent;
-  border-radius: 20px;
-  filter: drop-shadow(2px 2px 4px rgb(117, 72, 17));
-}
-
 .mainDiseniosAHover {
   transform: scale(1);
   transition: transform 0.22s ease-in-out;
@@ -477,6 +470,7 @@ a {
 .fondoNaranjaParrafos {
   background-color: rgba(255, 194, 119, 0.876);
   border-radius: 20px;
+  filter: drop-shadow(2px 2px 4px rgb(117, 72, 17));
 }
 
 .fondoSombreado {
@@ -486,31 +480,39 @@ a {
 /* ------ Media Querys ------ */
 @media (max-width: 1025px) {
   /* ---- Index ---- */
-  .mainGridItem1 img {
+  .mainGridContainer .mainGridItem1 img {
     width: 90%;
   }
-  .mainGridItem2 p, .mainGridContainer .mainGridItem3 p {
-    width: 100%;
+  .mainGridContainer .mainGridItem2 p, .mainGridContainer .mainGridItem3 p {
     font-size: 14pt;
+    margin-bottom: 0;
+    width: 21rem;
   }
-  .mainGridItem3 h3 {
+  .mainGridContainer .mainGridItem3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .mainGridContainer .mainGridItem3 h2 {
     font-size: 20pt;
     margin: 5px;
   }
-  .mainGridItem3 p {
-    width: 100%;
-    font-size: 14pt;
+  .mainGridContainer .mainGridItem3 p {
+    font-size: 13pt;
+    text-align: center;
+    width: 95%;
   }
-  .mainGridItem4 img {
+  .mainGridContainer .mainGridItem4 img {
     width: 90%;
   }
-  .mainIndexGridItemPropuesta {
-    background-size: 130px;
-    width: 80%;
+  .mainIndexGridPuestos .mainIndexGridItemPropuesta {
     justify-self: center;
+    background-size: 130px;
+    width: 70%;
   }
-  .mainIndexGridItemPropuesta a {
-    font-size: 16pt;
+  .mainIndexGridPuestos .mainIndexGridItemPropuesta a {
+    font-size: 14pt;
   }
   .gridUneteImg {
     width: 70%;
@@ -518,12 +520,10 @@ a {
   /* ---- Contactos ---- */
   .mainContactosFlex {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(2, 200px);
     grid-template-rows: repeat(2, 1fr);
     row-gap: 20px;
-    justify-content: space-around;
-    justify-items: center;
-    align-content: stretch;
   }
   .imagenConsultas img {
     width: 80%;
@@ -538,7 +538,7 @@ a {
   .footerContactoLogo {
     transform: scale(0.8);
   }
-  .irArriba h4 {
+  .irArriba h2 {
     font-size: 14pt;
   }
 }
@@ -555,31 +555,34 @@ a {
     transform: scale(1.2);
   }
   /* ---- Index ---- */
-  .mainGridItem1 img {
+  .mainGridContainer {
+    margin-bottom: 15px;
+  }
+  .mainGridContainer .mainGridItem1 img {
     width: 100%;
   }
-  .mainGridItem2 p, .mainGridContainer .mainGridItem3 p {
-    width: 100%;
+  .mainGridContainer .mainGridItem2 p, .mainGridContainer .mainGridItem3 p {
     font-size: 10pt;
-  }
-  .mainGridItem3 h3 {
-    font-size: 16pt;
-  }
-  .mainGridItem3 p {
     width: 100%;
-    font-size: 10pt;
   }
-  .mainGridItem4 img {
+  .mainGridContainer .mainGridItem3 h2 {
+    font-size: 14pt;
+  }
+  .mainGridContainer .mainGridItem3 p {
+    font-size: 10pt;
+    width: 100%;
+  }
+  .mainGridContainer .mainGridItem4 img {
     width: 90%;
   }
   .mainNuestrosServicios {
     padding: 5px;
-    height: 65rem;
+    height: 62rem;
   }
   .mainNuestrosServicios h2 {
     font-size: 20pt;
     font-weight: bold;
-    margin: 10px;
+    margin: 5px;
   }
   .mainNuestrosServicios .mainNSLista {
     height: 15rem;
@@ -602,9 +605,23 @@ a {
   /* ---- Contactos ---- */
   .mainContactosFlex {
     display: grid;
+    justify-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    justify-items: center;
+  }
+  /* ---- Diseños ---- */
+  .mainDiseñosResponsive {
+    font-size: 12pt;
+  }
+  .mainDiseñosResponsive h2 {
+    font-size: 20pt;
+  }
+  .mainDiseñosResponsive p {
+    font-size: 12pt !important;
+    text-align: justify;
+  }
+  .mainDiseñosResponsive .mainDiseniosAHover {
+    width: 100% !important;
   }
   /* ---- Subdiseños ---- */
   .subDiseniosSectionPrincipal .subDiseniosResponsive {
@@ -621,6 +638,19 @@ a {
   .subDiseniosSectionPrincipalFinal .subDiseniosReduccionImg {
     width: 35rem;
     height: 20rem;
+  }
+  /* ---- Únete ---- */
+  .mainUneteGrid .mainUneteGridItem {
+    width: 47%;
+  }
+  .mainUneteGrid .mainUneteGridItem h2 {
+    font-size: 21pt !important;
+  }
+  .mainUneteGrid .mainUneteGridItem p {
+    font-size: 11pt !important;
+  }
+  .mainUneteGrid .mainUneteGridItem p .mainUneteSpan {
+    font-size: 12pt;
   }
   /* ---- Footer ----  */
   .contenedorFooter ul {

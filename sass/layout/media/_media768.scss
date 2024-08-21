@@ -1,6 +1,6 @@
 @media (max-width:769px) {
 
-    .tituloPrincipal{
+    .tituloPrincipal {
         font-size: 24pt;
     }
 
@@ -22,44 +22,47 @@
     }
 
     /* ---- Index ---- */
-    .mainGridItem1 {
-        img {
-            width: 100%;
-        }
-    }
+    .mainGridContainer {
+        margin-bottom: 15px;
 
-    .mainGridItem2 {
-        p {
-            width: 100%;
-            font-size: 10pt;
-        }
-    }
-
-    .mainGridItem3 {
-        h3 {
-            font-size: 16pt;
+        .mainGridItem1 {
+            img {
+                width: 100%;
+            }
         }
 
-        p {
-            width: 100%;
-            font-size: 10pt;
+        .mainGridItem2 {
+            p {
+                font-size: 10pt;
+                width: 100%;
+            }
         }
-    }
 
-    .mainGridItem4 {
-        img {
-            width: 90%;
+        .mainGridItem3 {
+            h2 {
+                font-size: $fontSizeParrafo;
+            }
+
+            p {
+                font-size: 10pt;
+                width: 100%;
+            }
+        }
+
+        .mainGridItem4 {
+            img {
+                width: 90%;
+            }
         }
     }
 
     .mainNuestrosServicios {
         padding: 5px;
-        height: 65rem;
+        height: 62rem;
 
         h2 {
-            font-size: 20pt;
-            font-weight: bold;
-            margin: 10px;
+            @include fontSizeBold($fontSizeSubtitulo, bold);
+            margin: 5px;
         }
 
         .mainNSLista {
@@ -95,33 +98,70 @@
 
     .mainContactosFlex {
         display: grid;
+        justify-items: center;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        justify-items: center;
+    }
+
+    /* ---- Diseños ---- */
+    .mainDiseñosResponsive {
+        font-size: $fontSizeTexto;
+
+        h2 {
+            font-size: $fontSizeSubtitulo;
+        }
+
+        p {
+            font-size: $fontSizeTexto !important;
+            text-align: justify;
+        }
+
+        .mainDiseniosAHover {
+            width: 100% !important;
+        }
     }
 
     /* ---- Subdiseños ---- */
-    
-    .subDiseniosSectionPrincipal{
-        .subDiseniosResponsive{
+
+    .subDiseniosSectionPrincipal {
+        .subDiseniosResponsive {
             width: 35rem;
             height: 20rem;
         }
 
-        p{
-            font-size: 12pt;
+        p {
+            font-size: $fontSizeTexto;
             width: 50%;
         }
     }
 
-    .subDiseniosSectionPrincipalFinal{
-        p{
-            font-size: 14pt;
+    .subDiseniosSectionPrincipalFinal {
+        p {
+            font-size: $fontSizeParrafo;
         }
 
-        .subDiseniosReduccionImg{
+        .subDiseniosReduccionImg {
             width: 35rem;
             height: 20rem;
+        }
+    }
+
+    /* ---- Únete ---- */
+    .mainUneteGrid {
+        .mainUneteGridItem {
+            width: 47%;
+
+            h2 {
+                font-size: 21pt !important;
+            }
+
+            p {
+                font-size: 11pt !important;
+                
+                .mainUneteSpan{
+                    font-size: 12pt;
+                }
+            }
         }
     }
 
