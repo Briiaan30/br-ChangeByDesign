@@ -1,32 +1,3 @@
-// .navbar1{
-//     @include flex;
-//     color: red;
-// }
-
-// .navbar2{
-//     @extend .navbar1;
-//     color: black;
-// }
-
-// .item{
-//     @include flex2(center, end, 5px);
-// }
-
-// @mixin flex{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     gap:10px;
-// }
-
-// @mixin flex2 ($justify, $align, $gap){
-//     display: flex;
-//     justify-content: $justify;
-//     align-items: $align;
-//     gap: $gap;
-// }
-
-
 /* ------ Utilities ------*/
 @import "./utilities/variables";
 @import "./utilities/mixins";

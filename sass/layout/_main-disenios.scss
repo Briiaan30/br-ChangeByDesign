@@ -9,7 +9,7 @@
     filter: drop-shadow(2px 2px 4px rgb(117, 72, 17));
 }
 
-.mainDiseñosAHover {
+.mainDiseniosAHover {
     transform: scale(1);
     transition: transform 0.22s ease-in-out;
 
@@ -17,4 +17,8 @@
         transform: scale(0.95);
         transition: transform 0.22s ease-in-out;
     }
+}
+
+.parrafoDisenios{
+    font-weight: bold;
 }

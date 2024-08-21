@@ -1,12 +1,12 @@
 .mainGridContainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     text-align: center;
-    width: 75%;
     margin: auto;
+    width: 75%;
 
     .mainGridItem1 {
         img {
@@ -15,17 +15,15 @@
     }
 
     .mainGridItem2 {
-        font-size: 14pt;
+        font-size: $fontSizeParrafo;
         width: 80%;
     }
 
     .mainGridItem3 {
-        width: 100%;
-        font-size: 14pt;
+        @extend .mainGridItem2;
 
-        h3 {
-            font-size: 20pt;
-            font-weight: bold;
+        h2 {
+            @include fontSizeBold($fontSizeSubtitulo, bold);
             margin-bottom: 10px;
         }
     }
@@ -46,24 +44,23 @@
     padding: 50px;
 
     h2 {
+        @include fontSizeBold($fontSizeSubtitulo2,bold);
         text-align: center;
-        font-size: 26pt;
-        font-weight: bold;
-        margin: 40px
+        margin: 5px 10px
     }
 
     .mainNSLista {
         display: grid;
         justify-content: center;
         align-items: center;
-        width: 70%;
-        margin: auto;
-        padding: 20px;
         grid-template-rows: repeat(4, 1fr);
         row-gap: 30px;
+        padding: 20px;
+        margin: auto;
+        width: 70%;
 
         li {
-            font-size: 16pt;
+            font-size: $fontSizeParrafo;
 
             p {
                 margin: 8px 10px;
@@ -78,66 +75,60 @@
 
 .mainIndexGridPuestos {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
     justify-content: center;
     align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     margin: 30px 30px;
-    // width: 95%;
-    // height: 80vh;
 
     .mainIndexGridItemPuesto1 {
         display: flex;
+        justify-content: center;
         grid-column: 1/3;
         grid-row: 1/3;
-        justify-content: center;
     }
 
     .mainIndexGridItemPuesto2{
-        display: flex;
+        @extend .mainIndexGridItemPuesto1;
         grid-column: 2/4;
         grid-row: 2/4;
-        justify-content: center;
     }
 
     .mainIndexGridItemPuesto3{
-        display: flex;
+        @extend .mainIndexGridItemPuesto1;
         grid-column: 3/5;
         grid-row: 3/5;
-        justify-content: center;
     }
 
     .mainIndexGridItemPuesto4{
-        display: flex;
+        @extend .mainIndexGridItemPuesto1;
         grid-column: 4/6;
         grid-row: 4/6;
-        justify-content: center;
     }
 
     .mainIndexGridItemPropuesta{
-        display: flex;
+        @extend .mainIndexGridItemPuesto1;
         align-items: center;
-        justify-content: center;
         grid-column: 5/6;
         grid-row: 1/2;
-        height: 20vh;
         background-image: url("../assets/images/indexGridUnete5.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-
+        height: 18vh;
+        
         a{
-            font-size: 20pt;
-            font-weight: bold;
+            @include fontSizeBold ($fontSizeSubtitulo, bold);
             text-align: center;
-            width: 200px;
-            padding-top: 15px;
             color: black;
+            padding-top: 15px;
+            width: 200px;
         }
     }
 }
 
 .gridUneteImg{
-    width: 65%;
     filter: drop-shadow(2px 2px 5px);
+    border-radius: 30px;
+    width: 65%;
 }

@@ -1,0 +1,4 @@
+@mixin fontSizeBold ($size, $bold){
+    font-size: $size;
+    font-weight: $bold;
+}

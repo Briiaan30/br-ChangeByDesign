@@ -16,10 +16,9 @@ a {
 }
 
 .tituloPrincipal{
-    background-color: rgba(255, 176, 30, 0.247);
+    @include fontSizeBold(36pt, bold);
     text-align: center;
+    background-color: rgba(255, 176, 30, 0.247);
     padding: 20px;
     margin-bottom: 20px;
-    font-size: 36pt;
-    font-weight: bold;
 }
